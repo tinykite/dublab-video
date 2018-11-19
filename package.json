@@ -1,0 +1,16 @@
+{
+  "name": "Dublab TV",
+  "version": "1.0.0",
+  "description": "Curated music videos from Dublab",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "keywords": [],
+  "author": "Dakota Sexton",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  }
+}
