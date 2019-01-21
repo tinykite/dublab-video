@@ -24,9 +24,9 @@ function onYouTubePlayerAPIReady() {
 
 function onPlayerReady(event) {
 	// bind events
-	const introContainer = document.querySelector('.intro-container');
+	const introContainer = document.querySelector('.intro');
   const videoContainer = document.querySelector('.video-container');
-  const playButton = document.querySelector('.button');
+  const playButton = document.querySelector('.intro__logo');
   
   playButton.addEventListener("click", function() {                 
     player.playVideo();

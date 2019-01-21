@@ -1,23 +1,35 @@
 body {
   margin: 0;
-  background: #cbf7f2;
+  background-color: black;
 }
 
 body {
   margin: 0;
 }
 
-.grid {
+.intro {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
 
-.bar--primary {
+.intro__bar--primary {
   height: 90vh;
 }
 
-.bar--secondary {
+.intro__bar--secondary {
   height: 10vh;
+}
+
+.intro__logo {
+  position: absolute;
+  top: calc(50% - 25vh);
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  height: 50vh;
+  transform: translateX(-50%);
+  width: auto;
+  cursor: pointer;
 }
 
 $colors: 
@@ -36,7 +48,7 @@ $colors:
 
 @each $color in $colors {
   $i: index($colors, $color);
-  .bar:nth-child(#{$i}) {
+  .intro__bar:nth-child(#{$i}) {
     background-color: $color;
   }
 }
